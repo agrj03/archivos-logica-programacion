@@ -1,0 +1,30 @@
+alert("¡Bienvenida y bievenido a nuestro sitio web!");
+
+let nombre = "Luna";
+let edad = 25;
+let numeroDeVentas = 50;
+let saldoDisponible = 1000;
+
+console.log(nombre);
+console.log(edad);
+console.log(numeroDeVentas);
+console.log(saldoDisponible);
+
+alert("¡Error! Completa todos los campos");
+
+let mensajeDeError = "¡Error! Completa todos los campos";
+alert(mensajeDeError);
+
+nombre = prompt("Escribe tu Nombre:");
+edad = prompt("Dígita tu Edad:");
+
+console.log(nombre);
+console.log(edad);
+
+if(edad >= 18 ){
+    alert("¡Puedes obtener tu licencia de conducir!");
+}else{
+    alert("Aun no cumples una edad legal!");
+}
+
+

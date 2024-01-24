@@ -1,0 +1,96 @@
+Javascrip 
+
+Definir variables con:
+-Let
+-Var
+-Const
+
+Condicionales
+-If()
+-Break: Escape del código en caso de tener un bucle
+
+Bucle de repetición:
+-while()
+-For()
+
+Operadores Lógicos s:
+-AND   : &&
+-OR    : ||
+-IGualdad : ==
+-Diferente: != 
+-Negacion:  !  - Ejemplo !(A == B) - Verdadero si A NO es igual a B
+-Validacion: === - Valor booleano, verifica igualdad de TIPO de elemento como de valor, digase comparar dos numeros que sean numero y no texto
+
+Alertas: muestran mensajes: alert(""); Ó alert(variable);
+
+-Template string: 
+Se puede utilizar comilla invertida[ `] para indicar que se mandara texto, variables o código JS. 
+-Ejemplo: alert(` Texto ejemplo: ${variable} .`);
+
+-Operador ternario: ofrece la posibilidad de reducir la cantidad de código escrito en algunas ocasiones. En otras palabras,
+es una condición "IF ELSE" pequeña
+	Ejemplo: intentos == 1 ? 'vez' : 'veces' 
+
+Solicitudes: promp('mensaje');
+*utilizamos el prompt para interactuar con la persona, permitiéndole ingresar un valor y almacenándolo en una variable.
+
+-Contadores:
+-contador = contador + 1;
+-contador += 1;
+-contador++;
+
+Math.Random
+-La función Math.random() devuelve un número de coma flotante pseudo-aleatorio, comprendido en el rango de 0 a menor que 1.
+
+Math.floor
+-Devuelve el máximo entero menor o igual a un número.
+
+ParseInt
+-Convertir a un entero la parte de una cadena/string.
+-Aunque el sistema llegue a funcionar al comparar un texto con un numero, es preferible el forzar al sistema a ser convertido a numero,
+ya que hay que mantener una consistencia en el sistema
+
+*** Las funciones juegan un papel central en la programación y en el desarrollo de software, permitiendo encapsular bloques de código reutilizables y ejecutables. 
+Pueden ser definidas para realizar tareas específicas, desde cálculos simples hasta la manipulación compleja de datos. Las funciones en JavaScript 
+pueden tener o no parámetros, así como devolver o no valores.
+
+Para crear funciones se declaran mediante la palabra reservada "function"
+- Ejemplo: Function Accion(aqui puede resibir variables){acciones a realizar}
+
+Las funciones son llamadas dentro del HTML, por ejemplo agregando el evento `onClick` dentro de una etiqueta boton
+-Ejemplo: <button onclick="ActionConsole();">Console</button>
+
+QuerySelector permite interactuar mediante JS con los documentos HTML. Selector génerico.
+-Ejemplo: let titulo = document.querySelector('h1');
+	Inserto texto dentro del Header
+-Ejemplo: titulo.innerHTML = "Juego del Número Secreto";
+*Si deseo usarlo para tomar un elemento por su ID, debo de utilzar el númeral '#', seguido del nombre de ID del elemento.
+-Ejemplo: document.querySelector('#valorUsuario');
+
+Return
+Todos las funciones regresan (retornan) algo, por lo que es esencial cual buena practica colocarlo al final de una funcion.
+
+Si quiero interactuar con diversos elementos HTML, he de asignarles un ID para poder identificarlos al momento de interactuar por JS.
+-Ejemplo: <input type="number" id="valorUsuario" min="1" max="10" class="container__input">
+
+Para hacer uso del mismo en JS, utilizo la funcion:
+document.getElementById("valorUsuario").value  / utilizo value para obtener el Valor ingresado, ya que obtendria todos sus atributos.
+
+Factorizar
+Cuando tú factorizas un número, tú estás multiplicando ese número por cada número consecutivo menos uno.
+Si tu número es 5, deberías tener:
+5! = 5 * 4 * 3 * 2 * 1               / Los numeros factorizados se representan como n! (N es el número)
+
+Arreglos
+Todos los arreglos inician en '0'
+Se define mediante let NombreArregle = []
+Para ingresar elementos al FINAL del array, se usa el método push "nombreArreglo.push("contenido")
+Para eliminar el ÚLTIMO elemento, puedes usar el método pop. "frutas.pop()"
+La propiedad "length" se utiliza para obtener la cantidad de elementos en una lista o array en JavaScript.
+
+El método .includes() comprueba si el elemento indicado está incluido en el arreglo. Es posible indicar un segundo 
+parámetro donde indicaremos la posición `number from` desde donde empezamos a buscar: numbers.includes(15, 1);
+
+El método .indexOf() hace algo similar a .includes(), pero en lugar de devolver un boolean, devuelve la posición 
+del elemento buscado. En el caso de no encontrarlo, devuelve un valor negativo -1. numbers.indexOf(15, 1); 
+También admite un segundo parámetro de posición.
